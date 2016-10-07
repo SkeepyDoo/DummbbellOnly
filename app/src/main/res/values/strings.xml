@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Info</string>
+    <string name="action_info">info</string>
+    <string name="workout_summary_text">Main Goal: \nWorkout Type:\nTraining Level: \nDays Per Week:\nEquipment Required:\n\nTarget Gender:\nAuthor:</string>
+    <string name="workout_summary_title">WORKOUT SUMMARY</string>
+    <string name="workout_summary_text_2"><![CDATA[Build Muscle\nFull Body\nBeginner\n3\nDummbells, Pull Up Bar, Bench\nMale & Female\nM&S Team]]></string>
+    <string name="workout_description_title">WORKOTU DESCRIPTION</string>
+    <string name="workout_description_1">Stuck at home and only have dumbbells? Maybe you\'re in a rut and what to try something different?\n\nThe dumbbell only home or gym full body workout focuses on the use of heavy compound lifts, and allows you to maximize muscle gains with minimal equipment. This workout can be run for an extended period of time. As long as you are experiencing strength and muscle gains, stick with this routine! Here are some key elements to maximizing progress:</string>
+    <string name="workout_description_2">\n<b>1. Progression.</b>\nNever waste a set. Always push for more reps on every set using good form. When you can hit the top level of the recommended rep range on your first set of an exercise, add weight! This means that if an exercise calls for 3 sets of 6 to 12 reps, and on your first set you can perform 12 reps, add more weight the next time you perform this exercise.</string>
+    <string name="workout_description_3">\n<b>2. Failure.</b>\nDo NOT train to failure. Train to the point where you believe you might fail if you attempt another rep.</string>
+    <string name="workout_description_4">\n<b>3. Food.</b>\nYou MUST eat more then it takes to maintain your bodyweight to pack on muscle mass. If you do not do this, you may add strength, but it will be very difficult to add muscle.</string>
+    <string name="workout_description_5">\n<b>A note for women:</b>\nWomen can perform this workout. Recommend rep range is 10 to 15 for most sets.\n\nYou will be working out 3 days per week - Monday, Wednesday and Friday. Do not add additional exercises into this workout. Cardio can be performed first thing in the morning, or post-resistance training.</string>
+    <string name="reps_editText_hint">reps</string>
+    <string name="weight_editText_weight">weight</string>
+    <string name="saved_reps">number of reps</string>
+    <string name="saved_reps_default_value">bla</string>
+</resources>
