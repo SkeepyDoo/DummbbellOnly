@@ -22,15 +22,15 @@ public class BFragment extends android.support.v4.app.Fragment {
 
         if (isfirstTime()) {
 
-            db.addExercise(new Exercise("Dumbbell Step Up", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dRSkjB"));
-            db.addExercise(new Exercise("Dumbbell Stiff Leg Deadlift", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dK5uua"));
-            db.addExercise(new Exercise("Seated Dumbbell Press", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dsSw75"));
-            db.addExercise(new Exercise("Standing One Leg Dumbbell Calf Raise", "3 Sets", "10-20 Reps", 0, 0, "http://bit.ly/2dKJSD3"));
-            db.addExercise(new Exercise("Dumbbell Shrug", "3 Sets", "10-15 Reps", 0, 0, "http://bit.ly/2dSvMvm"));
-            db.addExercise(new Exercise("Dumbbell Side Bends", "3 Sets", "10-15 Reps", 0, 0, "http://bit.ly/2cTryl2"));
+            db.addExercise(new Exercise("Dumbbell Step Up", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2dRSkjB", "B"));
+            db.addExercise(new Exercise("Dumbbell Stiff Leg Deadlift", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2dK5uua", "B"));
+            db.addExercise(new Exercise("Seated Dumbbell Press", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2dsSw75", "B"));
+            db.addExercise(new Exercise("Standing One Leg Dumbbell Calf Raise", "3 Sets", "10-20 Reps", "0", "0", "http://bit.ly/2dKJSD3", "B"));
+            db.addExercise(new Exercise("Dumbbell Shrug", "3 Sets", "10-15 Reps", "0", "0", "http://bit.ly/2dSvMvm", "B"));
+            db.addExercise(new Exercise("Dumbbell Side Bends", "3 Sets", "10-15 Reps", "0", "0", "http://bit.ly/2cTryl2", "B"));
         }
 
-        ArrayList<Exercise> exercises = db.getAllExercises();
+        ArrayList<Exercise> exercises = db.getExercisesB();
 
         ExerciseAdapter adapter = new ExerciseAdapter (getActivity(), exercises);
 
@@ -50,10 +50,10 @@ public class BFragment extends android.support.v4.app.Fragment {
 
     private boolean isfirstTime() {
         SharedPreferences preferences = getActivity().getPreferences(Context.MODE_PRIVATE);
-        boolean ranBefore = preferences.getBoolean("RanBefore", false);
+        boolean ranBefore = preferences.getBoolean("RanBefore2", false);
         if (!ranBefore) {
             SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("RanBefore", true);
+            editor.putBoolean("RanBefore2", true);
             editor.commit();
         }
         return !ranBefore;

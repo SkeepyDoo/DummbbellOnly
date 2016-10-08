@@ -6,23 +6,33 @@ public class Exercise {
     private String mName;
     private String mSets;
     private String mReps;
-    private int mStoredReps;
-    private int mStoredWeight;
+    private String mStoredReps;
+    private String mStoredWeight;
     private String mLink;
 
-    public int getStoredWeight() {
+    public String getFragment() {
+        return mFragment;
+    }
+
+    public void setFragment(String fragment) {
+        mFragment = fragment;
+    }
+
+    private String mFragment;
+
+    public String getStoredWeight() {
         return mStoredWeight;
     }
 
-    public void setStoredWeight(int storedWeight) {
+    public void setStoredWeight(String storedWeight) {
         mStoredWeight = storedWeight;
     }
 
-    public int getStoredReps() {
+    public String getStoredReps() {
         return mStoredReps;
     }
 
-    public void setStoredReps(int storedReps) {
+    public void setStoredReps(String storedReps) {
         mStoredReps = storedReps;
     }
 
@@ -38,13 +48,14 @@ public class Exercise {
 
     }
 
-    public Exercise(String name, String sets, String reps,int storedReps, int storedWeight, String link) {
+    public Exercise(String name, String sets, String reps,String storedReps, String storedWeight, String link, String fragment) {
         mName = name;
         mSets = sets;
         mReps = reps;
         mStoredReps = storedReps;
         mStoredWeight = storedWeight;
         mLink = link;
+        mFragment = fragment;
     }
 
     public void setName(String name) {
@@ -63,7 +74,7 @@ public class Exercise {
         mLink = link;
     }
 
-    public Exercise(int id, String name, String sets, String reps,int storedReps, int storedWeight, String link) {
+    public Exercise(int id, String name, String sets, String reps,String storedReps, String storedWeight, String link) {
         mId = id;
 
         mName = name;

@@ -24,15 +24,15 @@ public class AFragment extends android.support.v4.app.Fragment {
 
         if (isfirstTime()) {
 
-            db.addExercise(new Exercise("Dumbbell Squat", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dRdiz8"));
-            db.addExercise(new Exercise("Dumbbell Bench Press", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2e1zPIF"));
-            db.addExercise(new Exercise("One Arm Dumbbell Row", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dK3wK7"));
-            db.addExercise(new Exercise("Standing Dumbbell Curl", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2deVOrr"));
-            db.addExercise(new Exercise("Two Arm Seated Dumbbell Extension", "3 Sets", "6-12 Reps", 0, 0, "http://bit.ly/2dvyCHf"));
-            db.addExercise(new Exercise("Sit Up", "3 Sets", "10-25 Reps", 0, 0, "http://bit.ly/2dsR58O"));
+            db.addExercise(new Exercise("Dumbbell Squat", "3 Sets", "6-12 Reps", "2", "3", "http://bit.ly/2dRdiz8", "A"));
+            db.addExercise(new Exercise("Dumbbell Bench Press", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2e1zPIF", "A"));
+            db.addExercise(new Exercise("One Arm Dumbbell Row", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2dK3wK7", "A"));
+            db.addExercise(new Exercise("Standing Dumbbell Curl", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2deVOrr", "A"));
+            db.addExercise(new Exercise("Two Arm Seated Dumbbell Extension", "3 Sets", "6-12 Reps", "0", "0", "http://bit.ly/2dvyCHf", "A"));
+            db.addExercise(new Exercise("Sit Up", "3 Sets", "10-25 Reps", "0", "0", "http://bit.ly/2dsR58O", "A"));
         }
 
-        ArrayList<Exercise> exercises = db.getAllExercises();
+        ArrayList<Exercise> exercises = db.getExercisesA();
 
         ExerciseAdapter adapter = new ExerciseAdapter(getActivity(), exercises);
 
